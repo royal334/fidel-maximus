@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+
+@theme{
+  --color-bright-blue: #00aeef;
+  --color-light-blue: #1c75bc;
+}
+
+
 body{
   font-family: 'Libre Caslon Display', sans-serif ;
+}
+
+.inter{
+  font-family: 'Inter', sans-serif;
 }
