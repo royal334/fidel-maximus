@@ -13,7 +13,7 @@ function Header() {
           <header id='header' style={style}>
                <div className="container mx-auto flex justify-between items-center p-4 ">
                     <div>
-                         <img src="favicon.JPG" alt="" className="w-[40px] h-[40px]" />
+                         <img src="favicon.PNG" alt="" className="w-[40px] h-[40px]" />
                     </div>
                     <nav>
                          <ul className="flex gap-4 font-semibold">
