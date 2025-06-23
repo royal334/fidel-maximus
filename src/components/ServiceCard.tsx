@@ -20,17 +20,17 @@ function ServiceCard(props:ServiceCardProps) {
           <div className="mt-4 flex gap-4">
                <div className="p-1 bg-gray-200 rounded">
                     <a href={props.instagramurl} target="_blank">
-                         <FaInstagram className="w-[40px] h-[40px]"/>
+                         <FaInstagram className="w-[40px] h-[40px]" color="#00aeef"/>
                     </a>
                </div>
                <div className="p-1 bg-gray-200 rounded">
                     <a href={props.tiktokurl}>
-                         <FaTiktok className="w-[40px] h-[40px]"/>
+                         <FaTiktok className="w-[40px] h-[40px]" color="#00aeef"/>
                     </a>
                </div>
                <div className="p-1 bg-gray-200 rounded">
                     <a href={props.facebookurl}>
-                         <FaFacebook className="w-[40px] h-[40px]"/>
+                         <FaFacebook className="w-[40px] h-[40px]" color="#00aeef"/>
                     </a>
                </div>
                

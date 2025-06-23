@@ -6,7 +6,9 @@ function PackagesSection() {
           { id:1, title: "Student Package", description: "", img: "student-package.png", alt: "student package"},
           { id:2, title: "Billionare Wash", description: "", img: "billionaire-wash.JPG", alt: "Automobile service"},
           { id:3, title: "Bulk Laundry", description: "", img: "bulk-laundry.JPG", alt: "Bulk Laundry"},
-          { id:4, title: "Bachelor Package", description: "", img: "bachelor.JPG", alt: "Bachelor Package"}
+          { id:4, title: "Bachelor Package", description: "", img: "bachelor.JPG", alt: "Bachelor Package"},
+          { id:5, title: "Cheat Us for One Week", description: "", img: "cheat-us.jpg", alt: "Cheat us for one week"},
+          { id:6, title: "Faster, Better, Cheaper", description: "", img: "laundry.jpg", alt: "Unleach the fury"}
           ]
 
   return (
