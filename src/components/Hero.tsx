@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+
+import 'swiper/swiper-bundle.css';
+
 
 function Hero() {
 
@@ -17,7 +17,7 @@ function Hero() {
      <section id="hero">
           <div className="md:flex flex-col items-center justify-center  text-white text-center px-4 md:px-0 h-[90vh] md:h-[110vh] py-8 md:py-16 hero hidden ">
           </div>
-          <div className='md:hidden h-[55vh]'>
+          <div className='md:hidden h-[52vh]'>
           <Swiper
           // install Swiper modules
           modules={[Pagination]}
