@@ -5,6 +5,7 @@ import PackagesSection from "./components/PackagesSection"
 import About from "./components/About"
 import ContactForm from "./components/ContactForm"
 import Footer from "./components/Footer"
+import FAQ from './components/FAQ'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <About/>
       <Services/>
       <PackagesSection/>
+      <FAQ/>
       <ContactForm/>
       <Footer/>
     </>

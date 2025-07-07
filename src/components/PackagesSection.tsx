@@ -14,11 +14,11 @@ function PackagesSection() {
   return (
      <section id='packages' className="">
        <div className='container mx-auto px-4 py-20 md:px-0'>
-            <h2 className="text-3xl font-bold mb-4 text-center">Packages</h2>
+            <h2 className="text-3xl font-bold mb-4 text-center ">Packages</h2>
             <p className="text-gray-700 mb-6 text-center inter">
                Explore our range of packages designed to enhance your experience.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
           {
                packages.map((packagee)=> (
                     <Packages 

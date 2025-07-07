@@ -4,7 +4,7 @@ function About() {
   return (
     <section id='about'>
      <div className='py-20 container mx-auto px-4 md:px-0 '>
-          <h2 className='text-center text-3xl font-semibold mb-6'>About Us</h2>
+          <h2 className='text-center text-3xl font-semibold mb-6 '>About Us</h2>
           <div className='flex justify-between'>
                <div></div>
                <div>
