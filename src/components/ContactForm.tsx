@@ -1,9 +1,6 @@
 import { useForm } from "react-hook-form"
 
-type FormDataTypes = {
-  
-}
-
+t
 function ContactForm() {
 
   const { register } = useForm()
