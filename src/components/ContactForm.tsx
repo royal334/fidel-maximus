@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { useForm } from "react-hook-form"
 import {   Select,
           SelectContent,
@@ -21,7 +21,8 @@ type FormDataTypes = {
 
 
 function ContactForm() {
-
+  
+  const [error, setError] = useState('')
   const { register, setValue, watch, formState, reset,handleSubmit } = useForm<FormDataTypes>(
     {
       mode: "onBlur",
@@ -67,7 +68,7 @@ function ContactForm() {
                console.log('Success', res)
         }
       } catch{
-
+          setError('Failed to submit form ')
       }
       }
 
@@ -241,12 +242,13 @@ function ContactForm() {
                  </Select>
           </div>
               }
-          <div className="flex flex-col mt-2">
+          <div className="flex flex-col my-2">
             <label htmlFor="name" className="inter">Send a Custom Message</label>
               <textarea name="message" id="" className="w-full border-2 border-gray-300 inter p-4">
 
               </textarea>
           </div>
+          {error && <span  className="text-red-500 font-semibold inter">{error}</span>}
 
           <div className="flex justify-end items-center"><button type="submit" disabled={!isValid} className="rounded bg-bright-blue px-5 py-2 text-white inter font-semibold cursor-pointer mt-4 mx-auto md:mx-0">Submit</button></div>
         </form>
