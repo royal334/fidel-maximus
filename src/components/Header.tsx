@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { LuX } from "react-icons/lu";
-import DarkModeToggle from "./DarkModeToggle";
+import Logo from '/favicon.png'
+
 
 
 function Header() {
@@ -31,11 +32,11 @@ function Header() {
           <header id='header' style={style} className="sticky top-0 left-0 right-0 z-50 ">
                <div className="container mx-auto flex justify-between items-center p-4 ">
                     <div>
-                         <img src="favicon.png" alt="" className="w-[50px] h-[50px]" />
+                         <img src={Logo} alt="logo" className="w-[50px] h-[50px]" />
                     </div>
                     <nav className="hidden md:block">
                          <ul className="flex items-center gap-4 font-semibold">
-                                   <DarkModeToggle/>
+                                   
                                    <li className="font-semibold" onClick={toggleMenu}><a onClick={(e) => {handleSmoothScroll(e,'hero')}} href="/" className=" hover:text-bright-blue">Home</a></li>
                                    <li className="font-semibold" onClick={toggleMenu}><a onClick={(e) => {handleSmoothScroll(e,'about')}} href="#about"  className=" hover:text-bright-blue">About</a></li>
                                    <li className="font-semibold" onClick={toggleMenu}><a onClick={(e) => {handleSmoothScroll(e,'services')}} href="#services" className=" hover:text-bright-blue">Services</a></li>
@@ -43,7 +44,6 @@ function Header() {
                          </ul>
                     </nav>
                     <nav className="md:hidden flex items-center gap-2 ">
-                    <DarkModeToggle/>
                     <RxHamburgerMenu onClick={toggleMenu}/>
                     </nav>
                     {

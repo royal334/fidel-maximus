@@ -16,7 +16,7 @@ function Footer() {
     <footer id="footer" className="p-4 md:px-0 bg-light-blue ">
       <div className="container px-4 md:px-8 py-8 mx-auto">
         <div className="flex flex-col md:flex-row gap-8">
-          <div className="w-1/2 h-1/2">
+          <div className="md:w-1/2 md:h-1/2">
             <img
               src="/fidel-maximus-logo.png"
               alt="logo"
@@ -68,7 +68,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="my-10 border-t-2 border-b-2 py-6 border-gray-600 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="my-10 border-t-2 py-6 border-gray-600 grid grid-cols-1 md:grid-cols-2 gap-8">
           <FooterDetails
             title="PHONE"
             details=""
@@ -79,11 +79,28 @@ function Footer() {
             details="hello@eazifyinnovations.com"
             icon={<CiMail size={28} strokeWidth={1.75} color="#00aeef" />}
           />
-          <FooterDetails
-            title="ADDRESS"
-            details="Awka South, Anambra State, Nigeria"
-            icon={<LuMapPin size={28} strokeWidth={1.75} color="#00aeef" />}
-          />
+        </div>
+
+        <div>
+          <h3 className="text-center font-bold text-3xl">Addresses</h3>
+          <div className="my-10 border-b-2 py-6 border-gray-600">
+            <h4 className="font-semibold text-lg md:text-2xl">Laudry Offices</h4>
+            <ul className="inter mb-6">
+              <li>Office 1: </li>
+              <li>Office 2:</li>
+              <li>Office 3:</li>
+            </ul>
+            <FooterDetails
+              title="EMAIL"
+              details="hello@eazifyinnovations.com"
+              icon={<CiMail size={28} strokeWidth={1.75} color="#00aeef" />}
+            />
+            <FooterDetails
+              title="ADDRESS"
+              details="Awka South, Anambra State, Nigeria"
+              icon={<LuMapPin size={28} strokeWidth={1.75} color="#00aeef" />}
+            />
+          </div>
         </div>
       </div>
     </footer>
