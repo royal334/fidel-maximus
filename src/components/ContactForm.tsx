@@ -150,7 +150,7 @@ function ContactForm() {
                 <SelectTrigger className="w-full border-2 border-gray-300 font-semibold inter">
                            <SelectValue placeholder="Select a service"  />
                       </SelectTrigger>
-                      <SelectContent className="font-semibold inter">
+                      <SelectContent className="font-semibold inter bg-white">
                            <SelectItem value="laundry">Laundry</SelectItem>
                            <SelectItem value="cleaning">Cleaning</SelectItem>
                            <SelectItem value="automobile">Automobile</SelectItem>
@@ -169,7 +169,7 @@ function ContactForm() {
                 <SelectTrigger className="w-full border-2 border-gray-300 font-semibold inter">
                            <SelectValue placeholder="Select a cleaning service"  />
                       </SelectTrigger>
-                      <SelectContent className="font-semibold inter">
+                      <SelectContent className="font-semibold inter bg-white">
                            <SelectItem value="Residenial Cleaning" >Residenial Cleaning</SelectItem>
                            <SelectItem value="Industrial CLeaning">Industrial Cleaning</SelectItem>
                            <SelectItem value="Commercial Cleaning">Commercial Cleaning</SelectItem>
@@ -189,7 +189,7 @@ function ContactForm() {
                 <SelectTrigger className="w-full border-2 border-gray-300 font-semibold inter">
                            <SelectValue placeholder="Select a laundry service"  />
                       </SelectTrigger>
-                      <SelectContent className="font-semibold inter">
+                      <SelectContent className="font-semibold inter bg-white">
                            <SelectItem value="student package" >Student Package</SelectItem>
                            <SelectItem value="the Billionare wash">The Billionare Wash</SelectItem>
                            <SelectItem value="bulk laundry">Bulk Laundry</SelectItem>
@@ -210,7 +210,7 @@ function ContactForm() {
                 <SelectTrigger className="w-full border-2 border-gray-300 font-semibold inter">
                            <SelectValue placeholder="Select a car brand"  />
                       </SelectTrigger>
-                      <SelectContent className="font-semibold inter">
+                      <SelectContent className="font-semibold inter bg-white">
                            <SelectItem value="Toyata" >Toyata</SelectItem>
                            <SelectItem value="Lexus">Lexus</SelectItem>
                            <SelectItem value="Mercedes Benz">Mercedes Benz</SelectItem>
@@ -231,7 +231,7 @@ function ContactForm() {
                 <SelectTrigger className="w-full border-2 border-gray-300 font-semibold inter">
                            <SelectValue placeholder="Select a location"  />
                       </SelectTrigger>
-                      <SelectContent className="font-semibold inter">
+                      <SelectContent className="font-semibold inter bg-white">
                            <SelectItem value="enugu">Enugu</SelectItem>
                            <SelectItem value="imo">Imo</SelectItem>
                            <SelectItem value="Port harcourt">Port Harcourt</SelectItem>
