@@ -3,8 +3,6 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { LuX } from "react-icons/lu";
 
 
-
-
 function Header() {
 
      const [isOpen, setIsOpen] = useState(false)
@@ -32,7 +30,7 @@ function Header() {
           <header id='header' style={style} className="sticky top-0 left-0 right-0 z-50 ">
                <div className="container mx-auto flex justify-between items-center p-4 ">
                     <div>
-                         <img src='/assets/favicon.png' alt="logo" className="w-[50px] h-[50px]" />
+                         <img src='/favicon.png' alt="logo" className="w-[50px] h-[50px]" />
                     </div>
                     <nav className="hidden md:block">
                          <ul className="flex items-center gap-4 font-semibold">

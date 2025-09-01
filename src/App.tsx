@@ -6,6 +6,7 @@ import About from "./components/About"
 import ContactForm from "./components/ContactForm"
 import Footer from "./components/Footer"
 import FAQ from './components/FAQ'
+import LaundryPriceTable from "./components/PriceList"
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <PackagesSection/>
       <FAQ/>
       <ContactForm/>
+      <LaundryPriceTable/>
       <Footer/>
     </>
   )
