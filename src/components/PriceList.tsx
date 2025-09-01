@@ -53,7 +53,7 @@ const LaundryPriceTable = () => {
     columnHelper.accessor('service', {
       header: 'Service',
       cell: (info) => (
-        <div className="font-medium text-gray-900">
+        <div className="font-semibold text-gray-900">
           {info.getValue()}
         </div>
       ),
