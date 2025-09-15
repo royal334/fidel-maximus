@@ -14,7 +14,9 @@ function About() {
                <img src="/mission.PNG" alt="mission" className='max-h-[450px]' />
                </div>
                
-               <div></div>
+               <div>
+                    
+               </div>
 
           </div>
      </div>

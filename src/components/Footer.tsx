@@ -1,107 +1,102 @@
-import FooterDetails from "./FooterDetails";
-//import { useEffect, useState } from "react"
-import { CiPhone, CiMail } from "react-icons/ci";
-import { LuMapPin } from "react-icons/lu";
+import { Mail, Phone, MapPin } from "lucide-react";
+
 function Footer() {
-  // const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
-  // useEffect(() => {
-  //      const darkMode = localStorage.getItem('darkMode');
-  //      if (darkMode === 'true') {
-  //           setIsDarkMode(true);
-  //      } else {
-  //           setIsDarkMode(false);
-  //      }
-  // }, []);
+  const socialLinks = [
+    { name: "Home", href: "/" },
+    { name: "Facebook", href: "https://www.facebook.com/share/16U7W46ahB/?mibextid=wwXIfr" },
+    { name: "Instagram", href: "https://www.instagram.com/fidel_maximus_ltd?igsh=MWJiMzM5cDVic2xmag%3D%3D&utm_source=qr" },
+    { name: "TikTok", href: "https://www.tiktok.com/@fidelservices?_t=ZM-8x5UYDlYaZx&_r=1" },
+  ];
+
+    const offices = [
+    "Opp. Marvelous Junction",
+    "Opp. Ella Suite Tezzers Junction",
+    "Vimason Lodge Adj Holy Family Next Junction"
+  ];
+
   return (
     <footer id="footer" className="p-4 md:px-0 bg-light-blue ">
-      <div className="container px-4 md:px-8 py-8 mx-auto">
-        <div className="flex flex-col md:flex-row gap-8">
-          <div className="md:w-1/2 md:h-1/2">
-            <img
+      <div className="container px-4 md:px-8 py-8 mx-auto text-white inter">
+        {/* Main Footer Content */}
+        <div  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-8">
+          {/* Company Logo & Info */}
+          <div className="lg:col-span-1">
+              <img
               src="/fidel-maximus-logo.png"
               alt="logo"
-              className="h-full w-full "
+              
             />
+            <p className="text-footer-text-secondary mb-4">
+              Leading provider of innovative business solutions and property management services.
+            </p>
           </div>
-          <div className="grid grid-cols-2 text-white md:w-1/2 w-full justify-items-end md:justify-items-center gap-2 md:gap-0">
-            <a
-              href="/"
-              className="justify-self-start md:justify-self-center font-semibold hover:text-bright-blue"
-            >
-              Home
-            </a>
-            <a
-              href="https://www.linkedin.com/company/106349919/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BzqdsNmZ0QeG2CSEVnx5BGw%3D%3D"
-              target="_blank"
-              className="font-semibold hover:text-bright-blue"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="https://www.facebook.com/share/15MK5rNHMg/"
-              target="_blank"
-              className="justify-self-start md:justify-self-center font-semibold hover:text-bright-blue"
-            >
-              Facebook
-            </a>
-            <a
-              href="https://x.com/eazifytech?t=2q9jIy-RSl8ncnFkihrYnw&s=09"
-              target="_blank"
-              className="font-semibold hover:text-bright-blue"
-            >
-              X
-            </a>
-            <a
-              href="https://www.instagram.com/eazifyinnovations?igsh=cm52Ynd3bXdxN3Qy"
-              target="_blank"
-              className="justify-self-start md:justify-self-center font-semibold hover:text-bright-blue"
-            >
-              Instagram
-            </a>
-            <a
-              href="https://vm.tiktok.com/ZMSecUcWp/"
-              target="_blank"
-              className="font-semibold hover:text-bright-blue"
-            >
-              Tiktok
-            </a>
+
+          {/* Quick Links */}
+          <div className="lg:col-span-1">
+            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <nav className="space-y-2">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="block text-footer-text-secondary hover:text-white transition-colors duration-200 hover:pl-2"
+                >
+                  {link.name}
+                </a>
+              ))}
+            </nav>
           </div>
+
+          {/* Contact Information */}
+          <div className="lg:col-span-1">
+            <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
+            <div className="space-y-3">
+              <div className="flex items-center">
+                <Phone className="w-5 h-5 mr-3 " />
+                <span className="">Phone Available</span>
+              </div>
+              <div className="flex items-start">
+                <Mail size={24} className=" mr-3 mt-0.5 text-white" />
+                <a 
+                  href="mailto:Fidelservicesandrealestate@gmail.com"
+                  className=" hover:text-white transition-colors duration-200"
+                >
+                  Fidelservicesandrealestate@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Office Locations */}
+          <div className="lg:col-span-1">
+            <h3 className="text-lg font-semibold mb-4">Our Offices</h3>
+            <div className="space-y-3">
+              <div className="mb-4">
+                <h4 className="font-medium text-white mb-2">Landry Offices</h4>
+                <div className="space-y-2">
+                  {offices.map((office, index) => (
+                    <div key={index} className="flex items-start">
+                      <MapPin className="w-4 h-4 mr-2 mt-0.5 text-footer-text-secondary flex-shrink-0" />
+                      <span className="text-sm text-footer-text-secondary">
+                        Office {index + 1}: {office}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
         </div>
 
-        <div className="my-10 border-t-2 py-6 border-gray-600 grid grid-cols-1 md:grid-cols-2 gap-8">
-          <FooterDetails
-            title="PHONE"
-            details=""
-            icon={<CiPhone size={22} strokeWidth={1.75} color="#00aeef" />}
-          />
-          <FooterDetails
-            title="EMAIL"
-            details="hello@eazifyinnovations.com"
-            icon={<CiMail size={28} strokeWidth={1.75} color="#00aeef" />}
-          />
+        {/* Bottom Bar */}
+        <div className="border-t border-footer-blue-light/30 pt-6 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-footer-text-secondary text-sm mb-4 md:mb-0">
+            © 2024 Fidel Maximus. All rights reserved.
+          </p>
         </div>
 
-        <div>
-          <h3 className="text-center font-bold text-3xl">Addresses</h3>
-          <div className="my-10 border-b-2 py-6 border-gray-600">
-            <h4 className="font-semibold text-lg md:text-2xl">Laudry Offices</h4>
-            <ul className="inter mb-6">
-              <li>Office 1: </li>
-              <li>Office 2:</li>
-              <li>Office 3:</li>
-            </ul>
-            <FooterDetails
-              title="EMAIL"
-              details="hello@eazifyinnovations.com"
-              icon={<CiMail size={28} strokeWidth={1.75} color="#00aeef" />}
-            />
-            <FooterDetails
-              title="ADDRESS"
-              details="Awka South, Anambra State, Nigeria"
-              icon={<LuMapPin size={28} strokeWidth={1.75} color="#00aeef" />}
-            />
-          </div>
-        </div>
       </div>
     </footer>
   );
